@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 }
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formInput {
+  margin: 10px 0px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(185, 185, 185);
+}
+
+.formButton {
+  margin: 15px 0;
+  background-color: darkmagenta;
+  color: white;
+}
+
+.card {
+  border: 0.5px solid rgb(185, 185, 185);
+  border-radius: 5px;
+  margin: 35px 0;
+}
+
+.songTitle {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 600;
+  color: darkmagenta;
+}
