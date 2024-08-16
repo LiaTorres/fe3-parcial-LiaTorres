@@ -5,7 +5,7 @@ import Card from "./Card";
 function Form() {
   const [name, setName] = useState("");
   const [song, setSong] = useState("");
-
+  const [message, setMessage] = useState("");
   const [flag, setFlag] = useState(false);
 
   const validateName = (name) => {
@@ -25,8 +25,9 @@ function Form() {
     const isSongValid = validateSong(song);
 
     if (!isNameValid || !isSongValid) {
-      alert("Por favor chequea que la información sea correcta");
+      setMessage("Por favor chequea que la información sea correcta");
     } else {
+      setMessage("");
       setFlag(true);
     }
   };
@@ -55,6 +56,7 @@ function Form() {
             Enviar
           </button>
         </form>
+        <p className="message">{message}</p>
       </div>
       {flag ? <Card name={name} song={song} /> : null}
     </div>
